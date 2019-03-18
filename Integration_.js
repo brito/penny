@@ -1,12 +1,4 @@
-function onOpen(){
-  SpreadsheetApp.getUi().createMenu('Bisk')
-  .addItem('Format Chase CSV', 'formatChase')
-  .addToUi();
-}
-
-function formatChase(){}
-
-function analyze() {
+function Analysis_() {
   console.warn('<<<<<<<<<< ' + new Date)
   var sheet_name = 'Analysis',
       range = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheet_name).getDataRange(),
